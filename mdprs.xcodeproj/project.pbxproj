@@ -7,26 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E930A0E028709D5E00789657 /* mdprsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0CC28709D5C00789657 /* mdprsApp.swift */; };
-		E930A0E128709D5E00789657 /* mdprsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0CC28709D5C00789657 /* mdprsApp.swift */; };
-		E930A0E228709D5E00789657 /* mdprsDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0CD28709D5C00789657 /* mdprsDocument.swift */; };
-		E930A0E328709D5E00789657 /* mdprsDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0CD28709D5C00789657 /* mdprsDocument.swift */; };
-		E930A0E428709D5E00789657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0CE28709D5C00789657 /* ContentView.swift */; };
-		E930A0E528709D5E00789657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0CE28709D5C00789657 /* ContentView.swift */; };
 		E930A0E628709D5E00789657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E930A0CF28709D5E00789657 /* Assets.xcassets */; };
 		E930A0E728709D5E00789657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E930A0CF28709D5E00789657 /* Assets.xcassets */; };
+		E930A0F728709EA700789657 /* PresenterDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0F228709EA700789657 /* PresenterDocument.swift */; };
+		E930A0F828709EA700789657 /* PresenterDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0F228709EA700789657 /* PresenterDocument.swift */; };
+		E930A0F928709EA700789657 /* PresenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0F428709EA700789657 /* PresenterApp.swift */; };
+		E930A0FA28709EA700789657 /* PresenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0F428709EA700789657 /* PresenterApp.swift */; };
+		E930A0FB28709EA700789657 /* PresentationEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0F628709EA700789657 /* PresentationEditorView.swift */; };
+		E930A0FC28709EA700789657 /* PresentationEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930A0F628709EA700789657 /* PresentationEditorView.swift */; };
+		E930A0FF28709FC400789657 /* mdprsKit in Frameworks */ = {isa = PBXBuildFile; productRef = E930A0FE28709FC400789657 /* mdprsKit */; };
+		E930A10228709FD100789657 /* mdprsKit in Frameworks */ = {isa = PBXBuildFile; productRef = E930A10128709FD100789657 /* mdprsKit */; };
+		E930A10528709FFD00789657 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = E930A10428709FFD00789657 /* Files */; };
+		E930A1072870A00800789657 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = E930A1062870A00800789657 /* Files */; };
+		E969BDCB28722F0300813639 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = E969BDCA28722F0300813639 /* CodeEditorView */; };
+		E969BDCD28722F1200813639 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = E969BDCC28722F1200813639 /* CodeEditorView */; };
+		E969BDCF28722F9E00813639 /* MarkdownEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDCE28722F9E00813639 /* MarkdownEditor.swift */; };
+		E969BDD028722F9E00813639 /* MarkdownEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDCE28722F9E00813639 /* MarkdownEditor.swift */; };
+		E969BDD32872C0E100813639 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDD22872C0E100813639 /* StatusBar.swift */; };
+		E969BDD42872C0E100813639 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDD22872C0E100813639 /* StatusBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E930A0CC28709D5C00789657 /* mdprsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mdprsApp.swift; sourceTree = "<group>"; };
-		E930A0CD28709D5C00789657 /* mdprsDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mdprsDocument.swift; sourceTree = "<group>"; };
-		E930A0CE28709D5C00789657 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E930A0CF28709D5E00789657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E930A0D428709D5E00789657 /* mdprs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdprs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E930A0D728709D5E00789657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E930A0DC28709D5E00789657 /* mdprs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdprs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E930A0DE28709D5E00789657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E930A0DF28709D5E00789657 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E930A0F228709EA700789657 /* PresenterDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterDocument.swift; sourceTree = "<group>"; };
+		E930A0F428709EA700789657 /* PresenterApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterApp.swift; sourceTree = "<group>"; };
+		E930A0F628709EA700789657 /* PresentationEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationEditorView.swift; sourceTree = "<group>"; };
+		E930A10828717CFE00789657 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E930A10928717D2900789657 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		E969BDCE28722F9E00813639 /* MarkdownEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditor.swift; sourceTree = "<group>"; };
+		E969BDD22872C0E100813639 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E969BDCD28722F1200813639 /* CodeEditorView in Frameworks */,
+				E930A10528709FFD00789657 /* Files in Frameworks */,
+				E930A10228709FD100789657 /* mdprsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E969BDCB28722F0300813639 /* CodeEditorView in Frameworks */,
+				E930A1072870A00800789657 /* Files in Frameworks */,
+				E930A0FF28709FC400789657 /* mdprsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,19 +70,20 @@
 		E930A0C628709D5B00789657 = {
 			isa = PBXGroup;
 			children = (
+				E930A10928717D2900789657 /* LICENSE.md */,
+				E930A10828717CFE00789657 /* README.md */,
 				E930A0CB28709D5C00789657 /* Shared */,
 				E930A0D628709D5E00789657 /* iOS */,
 				E930A0DD28709D5E00789657 /* macOS */,
 				E930A0D528709D5E00789657 /* Products */,
+				E930A10028709FD100789657 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		E930A0CB28709D5C00789657 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E930A0CC28709D5C00789657 /* mdprsApp.swift */,
-				E930A0CD28709D5C00789657 /* mdprsDocument.swift */,
-				E930A0CE28709D5C00789657 /* ContentView.swift */,
+				E930A0F028709EA700789657 /* Sources */,
 				E930A0CF28709D5E00789657 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -94,6 +115,57 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		E930A0F028709EA700789657 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E930A0F328709EA700789657 /* Application */,
+				E930A0F128709EA700789657 /* Models */,
+				E930A0F528709EA700789657 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E930A0F128709EA700789657 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E930A0F228709EA700789657 /* PresenterDocument.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E930A0F328709EA700789657 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E930A0F428709EA700789657 /* PresenterApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E930A0F528709EA700789657 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E969BDD12872C0A900813639 /* Editor */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E930A10028709FD100789657 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E969BDD12872C0A900813639 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				E969BDCE28722F9E00813639 /* MarkdownEditor.swift */,
+				E930A0F628709EA700789657 /* PresentationEditorView.swift */,
+				E969BDD22872C0E100813639 /* StatusBar.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +174,7 @@
 			buildConfigurationList = E930A0EA28709D5E00789657 /* Build configuration list for PBXNativeTarget "mdprs (iOS)" */;
 			buildPhases = (
 				E930A0D028709D5E00789657 /* Sources */,
+				E969BDC8287188B200813639 /* Set Build Number */,
 				E930A0D128709D5E00789657 /* Frameworks */,
 				E930A0D228709D5E00789657 /* Resources */,
 			);
@@ -110,6 +183,11 @@
 			dependencies = (
 			);
 			name = "mdprs (iOS)";
+			packageProductDependencies = (
+				E930A10128709FD100789657 /* mdprsKit */,
+				E930A10428709FFD00789657 /* Files */,
+				E969BDCC28722F1200813639 /* CodeEditorView */,
+			);
 			productName = "mdprs (iOS)";
 			productReference = E930A0D428709D5E00789657 /* mdprs.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +197,7 @@
 			buildConfigurationList = E930A0ED28709D5E00789657 /* Build configuration list for PBXNativeTarget "mdprs (macOS)" */;
 			buildPhases = (
 				E930A0D828709D5E00789657 /* Sources */,
+				E969BDC72871886900813639 /* Set Build Number */,
 				E930A0D928709D5E00789657 /* Frameworks */,
 				E930A0DA28709D5E00789657 /* Resources */,
 			);
@@ -127,6 +206,11 @@
 			dependencies = (
 			);
 			name = "mdprs (macOS)";
+			packageProductDependencies = (
+				E930A0FE28709FC400789657 /* mdprsKit */,
+				E930A1062870A00800789657 /* Files */,
+				E969BDCA28722F0300813639 /* CodeEditorView */,
+			);
 			productName = "mdprs (macOS)";
 			productReference = E930A0DC28709D5E00789657 /* mdprs.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +242,11 @@
 				Base,
 			);
 			mainGroup = E930A0C628709D5B00789657;
+			packageReferences = (
+				E930A0FD28709FC400789657 /* XCRemoteSwiftPackageReference "mdprsKit" */,
+				E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */,
+				E969BDC928722F0300813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */,
+			);
 			productRefGroup = E930A0D528709D5E00789657 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,14 +276,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E969BDC72871886900813639 /* Set Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "agvtool new-version -all $(date +%Y%m%d%H%M%S)\n";
+		};
+		E969BDC8287188B200813639 /* Set Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "agvtool new-version -all $(date +%Y%m%d%H%M%S)\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E930A0D028709D5E00789657 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E930A0E028709D5E00789657 /* mdprsApp.swift in Sources */,
-				E930A0E228709D5E00789657 /* mdprsDocument.swift in Sources */,
-				E930A0E428709D5E00789657 /* ContentView.swift in Sources */,
+				E969BDD32872C0E100813639 /* StatusBar.swift in Sources */,
+				E930A0F928709EA700789657 /* PresenterApp.swift in Sources */,
+				E969BDCF28722F9E00813639 /* MarkdownEditor.swift in Sources */,
+				E930A0F728709EA700789657 /* PresenterDocument.swift in Sources */,
+				E930A0FB28709EA700789657 /* PresentationEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +332,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E930A0E128709D5E00789657 /* mdprsApp.swift in Sources */,
-				E930A0E328709D5E00789657 /* mdprsDocument.swift in Sources */,
-				E930A0E528709D5E00789657 /* ContentView.swift in Sources */,
+				E969BDD42872C0E100813639 /* StatusBar.swift in Sources */,
+				E930A0FA28709EA700789657 /* PresenterApp.swift in Sources */,
+				E969BDD028722F9E00813639 /* MarkdownEditor.swift in Sources */,
+				E930A0F828709EA700789657 /* PresenterDocument.swift in Sources */,
+				E930A0FC28709EA700789657 /* PresentationEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,11 +393,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
@@ -313,10 +448,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};
@@ -326,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20220704084125;
 				DEVELOPMENT_TEAM = GQE994U6EG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -335,6 +473,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
@@ -343,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.thbonk.mdprs;
 				PRODUCT_NAME = mdprs;
 				SDKROOT = iphoneos;
@@ -359,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20220704084125;
 				DEVELOPMENT_TEAM = GQE994U6EG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -368,6 +507,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
@@ -376,7 +516,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.thbonk.mdprs;
 				PRODUCT_NAME = mdprs;
 				SDKROOT = iphoneos;
@@ -395,19 +535,20 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20220704084125;
 				DEVELOPMENT_TEAM = GQE994U6EG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Thomas Bonk.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.thbonk.mdprs;
 				PRODUCT_NAME = mdprs;
 				SDKROOT = macosx;
@@ -424,19 +565,20 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20220704084125;
 				DEVELOPMENT_TEAM = GQE994U6EG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Thomas Bonk.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.thbonk.mdprs;
 				PRODUCT_NAME = mdprs;
 				SDKROOT = macosx;
@@ -476,6 +618,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E930A0FD28709FC400789657 /* XCRemoteSwiftPackageReference "mdprsKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mdprs/mdprsKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Files";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		E969BDC928722F0300813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchakravarty/CodeEditorView";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E930A0FE28709FC400789657 /* mdprsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E930A0FD28709FC400789657 /* XCRemoteSwiftPackageReference "mdprsKit" */;
+			productName = mdprsKit;
+		};
+		E930A10128709FD100789657 /* mdprsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E930A0FD28709FC400789657 /* XCRemoteSwiftPackageReference "mdprsKit" */;
+			productName = mdprsKit;
+		};
+		E930A10428709FFD00789657 /* Files */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */;
+			productName = Files;
+		};
+		E930A1062870A00800789657 /* Files */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */;
+			productName = Files;
+		};
+		E969BDCA28722F0300813639 /* CodeEditorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E969BDC928722F0300813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
+			productName = CodeEditorView;
+		};
+		E969BDCC28722F1200813639 /* CodeEditorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E969BDC928722F0300813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
+			productName = CodeEditorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E930A0C728709D5B00789657 /* Project object */;
 }

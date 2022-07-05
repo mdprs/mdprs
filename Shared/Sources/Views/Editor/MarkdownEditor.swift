@@ -19,6 +19,7 @@
 //
 
 import CodeEditorView
+//import CodeEditor
 import SwiftUI
 
 struct MarkdownEditor: View {
@@ -31,6 +32,7 @@ struct MarkdownEditor: View {
   // MARK: - Public Properties
 
   var body: some View {
+    //CodeEditor(source: $text, language: .markdown, theme: .default)
     CodeEditor(
           text: $text,
       position: positionBinding(),
@@ -96,11 +98,12 @@ struct MarkdownEditor: View {
   }
 
   private func cursorPosition(for range: NSRange) -> Position {
-    let index = text.index(text.startIndex, offsetBy: range.location)
+    let oor = text.count < range.location
+    let index = text.index(text.startIndex, offsetBy: range.location - (oor ? 1 : 0))
     let textBeforeCursor = text.endIndex < index ? text[...index] : text[..<index]
     let y = textBeforeCursor.reduce(0, { $1 == "\n" ? $0 + 1 : $0 }) + 1
     let lastLine = textBeforeCursor.components(separatedBy: "\n").last
-    let x = (lastLine?.count ?? 0) + 1
+    let x = (lastLine?.count ?? 0) + 1 + (oor ? 1 : 0)
 
     return (column: x, line: y)
   }

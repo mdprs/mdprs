@@ -27,7 +27,9 @@ struct StatusBar: View {
   var body: some View {
     HStack {
       Text(String(format: "Line: %4u | Column: %4u", position.line, position.column))
+
       Text("|")
+
       Button {
         sourceMapVisible = !sourceMapVisible
       } label: {
@@ -36,7 +38,17 @@ struct StatusBar: View {
       .help("Toggle Source Map")
       .keyboardShortcut("m", modifiers: .command)
       .buttonStyle(.plain)
+
       Spacer()
+
+      Button {
+        showPreview = !showPreview
+      } label: {
+        Image(systemName: showPreview ? "tv.fill" : "tv")
+      }
+      .help("Show Preview")
+      .keyboardShortcut("p", modifiers: .command)
+      .buttonStyle(.plain)
     }
     .padding([.leading, .trailing], 10)
     .padding(.bottom, 5)
@@ -48,5 +60,8 @@ struct StatusBar: View {
 
   @Binding
   var sourceMapVisible: Bool
+
+  @Binding
+  var showPreview: Bool
 }
 

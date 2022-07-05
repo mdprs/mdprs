@@ -19,12 +19,13 @@
 		E930A10228709FD100789657 /* mdprsKit in Frameworks */ = {isa = PBXBuildFile; productRef = E930A10128709FD100789657 /* mdprsKit */; };
 		E930A10528709FFD00789657 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = E930A10428709FFD00789657 /* Files */; };
 		E930A1072870A00800789657 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = E930A1062870A00800789657 /* Files */; };
-		E969BDCB28722F0300813639 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = E969BDCA28722F0300813639 /* CodeEditorView */; };
-		E969BDCD28722F1200813639 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = E969BDCC28722F1200813639 /* CodeEditorView */; };
 		E969BDCF28722F9E00813639 /* MarkdownEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDCE28722F9E00813639 /* MarkdownEditor.swift */; };
 		E969BDD028722F9E00813639 /* MarkdownEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDCE28722F9E00813639 /* MarkdownEditor.swift */; };
 		E969BDD32872C0E100813639 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDD22872C0E100813639 /* StatusBar.swift */; };
 		E969BDD42872C0E100813639 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDD22872C0E100813639 /* StatusBar.swift */; };
+		E969BE2A2874591500813639 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = E969BE292874591500813639 /* CodeEditorView */; };
+		E969BE2C2874592A00813639 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = E969BE2B2874592A00813639 /* CodeEditorView */; };
+		E969BE2F2874B34F00813639 /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = E969BE2E2874B34F00813639 /* CodeEditor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		E930A10928717D2900789657 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		E969BDCE28722F9E00813639 /* MarkdownEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditor.swift; sourceTree = "<group>"; };
 		E969BDD22872C0E100813639 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		E969BE24287338B300813639 /* MACOS_BUILD_NUMBER.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MACOS_BUILD_NUMBER.xcconfig; sourceTree = "<group>"; };
+		E969BE262874013D00813639 /* IOS_BUILD_NUMBER.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = IOS_BUILD_NUMBER.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E969BDCD28722F1200813639 /* CodeEditorView in Frameworks */,
+				E969BE2C2874592A00813639 /* CodeEditorView in Frameworks */,
 				E930A10528709FFD00789657 /* Files in Frameworks */,
 				E930A10228709FD100789657 /* mdprsKit in Frameworks */,
 			);
@@ -58,7 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E969BDCB28722F0300813639 /* CodeEditorView in Frameworks */,
+				E969BE2F2874B34F00813639 /* CodeEditor in Frameworks */,
+				E969BE2A2874591500813639 /* CodeEditorView in Frameworks */,
 				E930A1072870A00800789657 /* Files in Frameworks */,
 				E930A0FF28709FC400789657 /* mdprsKit in Frameworks */,
 			);
@@ -102,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				E930A0D728709D5E00789657 /* Info.plist */,
+				E969BE262874013D00813639 /* IOS_BUILD_NUMBER.xcconfig */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			children = (
 				E930A0DE28709D5E00789657 /* Info.plist */,
 				E930A0DF28709D5E00789657 /* macOS.entitlements */,
+				E969BE24287338B300813639 /* MACOS_BUILD_NUMBER.xcconfig */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -186,7 +192,7 @@
 			packageProductDependencies = (
 				E930A10128709FD100789657 /* mdprsKit */,
 				E930A10428709FFD00789657 /* Files */,
-				E969BDCC28722F1200813639 /* CodeEditorView */,
+				E969BE2B2874592A00813639 /* CodeEditorView */,
 			);
 			productName = "mdprs (iOS)";
 			productReference = E930A0D428709D5E00789657 /* mdprs.app */;
@@ -197,7 +203,7 @@
 			buildConfigurationList = E930A0ED28709D5E00789657 /* Build configuration list for PBXNativeTarget "mdprs (macOS)" */;
 			buildPhases = (
 				E930A0D828709D5E00789657 /* Sources */,
-				E969BDC72871886900813639 /* Set Build Number */,
+				E969BE27287401D200813639 /* Set Build Number */,
 				E930A0D928709D5E00789657 /* Frameworks */,
 				E930A0DA28709D5E00789657 /* Resources */,
 			);
@@ -209,7 +215,8 @@
 			packageProductDependencies = (
 				E930A0FE28709FC400789657 /* mdprsKit */,
 				E930A1062870A00800789657 /* Files */,
-				E969BDCA28722F0300813639 /* CodeEditorView */,
+				E969BE292874591500813639 /* CodeEditorView */,
+				E969BE2E2874B34F00813639 /* CodeEditor */,
 			);
 			productName = "mdprs (macOS)";
 			productReference = E930A0DC28709D5E00789657 /* mdprs.app */;
@@ -245,7 +252,8 @@
 			packageReferences = (
 				E930A0FD28709FC400789657 /* XCRemoteSwiftPackageReference "mdprsKit" */,
 				E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */,
-				E969BDC928722F0300813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */,
+				E969BE282874591500813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */,
+				E969BE2D2874B34F00813639 /* XCRemoteSwiftPackageReference "CodeEditor" */,
 			);
 			productRefGroup = E930A0D528709D5E00789657 /* Products */;
 			projectDirPath = "";
@@ -277,24 +285,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E969BDC72871886900813639 /* Set Build Number */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Set Build Number";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "agvtool new-version -all $(date +%Y%m%d%H%M%S)\n";
-		};
 		E969BDC8287188B200813639 /* Set Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,8 +300,26 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "agvtool new-version -all $(date +%Y%m%d%H%M%S)\n";
+			shellPath = /bin/zsh;
+			shellScript = "echo \"MACOS_BUILD_NUMBER=$(([##16]`date +%Y%m%d%H%M%S`))\" > iOS/IOS_BUILD_NUMBER.xcconfig\n";
+		};
+		E969BE27287401D200813639 /* Set Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "echo \"MACOS_BUILD_NUMBER=$(([##16]`date +%Y%m%d%H%M%S`))\" > macOS/MACOS_BUILD_NUMBER.xcconfig\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -460,11 +468,12 @@
 		};
 		E930A0EB28709D5E00789657 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E969BE262874013D00813639 /* IOS_BUILD_NUMBER.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20220704084125;
+				CURRENT_PROJECT_VERSION = 20220704111528;
 				DEVELOPMENT_TEAM = GQE994U6EG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -494,11 +503,12 @@
 		};
 		E930A0EC28709D5E00789657 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E969BE262874013D00813639 /* IOS_BUILD_NUMBER.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20220704084125;
+				CURRENT_PROJECT_VERSION = 20220704111528;
 				DEVELOPMENT_TEAM = GQE994U6EG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -529,13 +539,14 @@
 		};
 		E930A0EE28709D5E00789657 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E969BE24287338B300813639 /* MACOS_BUILD_NUMBER.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20220704084125;
+				CURRENT_PROJECT_VERSION = "$(MACOS_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = GQE994U6EG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -559,13 +570,14 @@
 		};
 		E930A0EF28709D5E00789657 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E969BE24287338B300813639 /* MACOS_BUILD_NUMBER.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20220704084125;
+				CURRENT_PROJECT_VERSION = "$(MACOS_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = GQE994U6EG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -636,12 +648,20 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		E969BDC928722F0300813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
+		E969BE282874591500813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mchakravarty/CodeEditorView";
 			requirement = {
 				branch = main;
 				kind = branch;
+			};
+		};
+		E969BE2D2874B34F00813639 /* XCRemoteSwiftPackageReference "CodeEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZeeZide/CodeEditor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -667,15 +687,20 @@
 			package = E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */;
 			productName = Files;
 		};
-		E969BDCA28722F0300813639 /* CodeEditorView */ = {
+		E969BE292874591500813639 /* CodeEditorView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E969BDC928722F0300813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
+			package = E969BE282874591500813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
 			productName = CodeEditorView;
 		};
-		E969BDCC28722F1200813639 /* CodeEditorView */ = {
+		E969BE2B2874592A00813639 /* CodeEditorView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E969BDC928722F0300813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
+			package = E969BE282874591500813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
 			productName = CodeEditorView;
+		};
+		E969BE2E2874B34F00813639 /* CodeEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E969BE2D2874B34F00813639 /* XCRemoteSwiftPackageReference "CodeEditor" */;
+			productName = CodeEditor;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

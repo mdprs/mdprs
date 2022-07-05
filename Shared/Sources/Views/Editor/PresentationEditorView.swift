@@ -27,7 +27,7 @@ struct PresentationEditorView: View {
   var body: some View {
     VStack {
       MarkdownEditor(text: $document.text, position: $position, sourceMapVisible: sourceMapVisible)
-      StatusBar(position: $position, sourceMapVisible: $sourceMapVisible)
+      StatusBar(position: $position, sourceMapVisible: $sourceMapVisible, showPreview: $showPreview)
     }
   }
 
@@ -39,6 +39,9 @@ struct PresentationEditorView: View {
 
   @State
   var sourceMapVisible = true
+
+  @State
+  var showPreview = false
 }
 
 struct ContentView_Previews: PreviewProvider {

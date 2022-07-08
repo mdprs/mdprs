@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+import mdprsKit
 import SwiftUI
 
 struct PresentationEditorView: View {
@@ -26,22 +27,55 @@ struct PresentationEditorView: View {
 
   var body: some View {
     VStack {
-      MarkdownEditor(text: $document.text, position: $position, sourceMapVisible: sourceMapVisible)
-      StatusBar(position: $position, sourceMapVisible: $sourceMapVisible, showPreview: $showPreview)
+      MarkdownEditor(text: documentBinding(), position: $position)
+      StatusBar(position: $position, showPreview: $showPreview).padding(.vertical, 2)
     }
+    .onAppear(perform: startPresentationService)
+    .onDisappear(perform: stopPresentationService)
   }
 
   @Binding
   var document: PresenterDocument
 
-  @State
-  var position = (column: 1, line: 1)
+
+  // MARK: - Private Properties
 
   @State
-  var sourceMapVisible = true
+  private var position = (column: 1, line: 1)
 
   @State
-  var showPreview = false
+  private var showPreview = false
+
+  @State
+  private var presentationService: SlidedeckService!
+
+
+  // MARK: - Private Methods
+
+  private func documentBinding() -> Binding<String> {
+    return Binding {
+      return document.text
+    } set: { value in
+      document.text = value
+      presentationService.slidedeck = value
+    }
+  }
+
+  private func startPresentationService() {
+    if presentationService == nil {
+      presentationService = SlidedeckService()
+    }
+    presentationService.slidedeck = document.text
+    do {
+      try presentationService.start()
+    } catch {
+      // TODO Handle error
+    }
+  }
+
+  private func stopPresentationService() {
+    presentationService.stop()
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

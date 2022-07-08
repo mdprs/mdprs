@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+import mdprsKit
 import SwiftUI
 import UniformTypeIdentifiers
 
@@ -35,7 +36,7 @@ struct PresenterDocument: FileDocument {
 
 
   // MARK: - Public Properties
-  
+
   var text: String
 
 

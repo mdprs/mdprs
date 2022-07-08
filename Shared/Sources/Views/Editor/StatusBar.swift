@@ -26,18 +26,7 @@ struct StatusBar: View {
 
   var body: some View {
     HStack {
-      Text(String(format: "Line: %4u | Column: %4u", position.line, position.column))
-
-      Text("|")
-
-      Button {
-        sourceMapVisible = !sourceMapVisible
-      } label: {
-        Image(systemName: sourceMapVisible ? "map.fill" : "map")
-      }
-      .help("Toggle Source Map")
-      .keyboardShortcut("m", modifiers: .command)
-      .buttonStyle(.plain)
+      Text("Line: \(position.line) Col: \(position.column)")
 
       Spacer()
 
@@ -57,9 +46,6 @@ struct StatusBar: View {
 
   @Binding
   var position: MarkdownEditor.Position
-
-  @Binding
-  var sourceMapVisible: Bool
 
   @Binding
   var showPreview: Bool

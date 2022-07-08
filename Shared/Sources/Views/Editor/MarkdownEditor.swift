@@ -18,8 +18,8 @@
 //  limitations under the License.
 //
 
-import CodeEditorView
-//import CodeEditor
+import CodeEditor
+import Combine
 import SwiftUI
 
 struct MarkdownEditor: View {
@@ -32,14 +32,11 @@ struct MarkdownEditor: View {
   // MARK: - Public Properties
 
   var body: some View {
-    //CodeEditor(source: $text, language: .markdown, theme: .default)
     CodeEditor(
-          text: $text,
-      position: positionBinding(),
-      messages: $messages,
-      language: markdown,
-          layout: CodeEditor.LayoutConfiguration(showMinimap: sourceMapVisible))
-    .environment(\.codeEditorTheme, colorScheme == .dark ? Theme.defaultDark : Theme.defaultLight)
+         source: $text,
+      selection: Binding(get: { selection }, set: { updatePosition($0) }),
+       language: .markdown,
+          theme: .default)
   }
 
   @Binding
@@ -48,63 +45,40 @@ struct MarkdownEditor: View {
   @Binding
   var position: Position
 
-  var sourceMapVisible: Bool
-
 
   // MARK: - Private Properties
 
   @State
-  private var internalPos = CodeEditor.Position()
-
-  @State
-  private var messages: Set<Located<Message>> = []
+  private var selection: Range<String.Index> = Range(uncheckedBounds: ("".startIndex, "".endIndex))
 
   @Environment(\.colorScheme)
   private var colorScheme: ColorScheme
 
-  private let markdown = LanguageConfiguration(
-    stringRegexp: LanguageConfiguration.swift.stringRegexp,
-    characterRegexp: nil,
-    numberRegexp: LanguageConfiguration.swift.numberRegexp,
-    singleLineComment: nil,
-    nestedComment: (open: "<!--", close: "-->"),
-    identifierRegexp: nil,
-    reservedIdentifiers: [
-      "---", "title", "description", "author", "keywords", "theme", "true", "false"
-    ])
-
 
   // MARK: - Private Methods
 
-  private func positionBinding() -> Binding<CodeEditor.Position> {
-    return Binding {
-      internalPos
-    } set: { newPos in
-      internalPos = newPos
-      position = cursorPosition(for: internalPos)
+  private func updatePosition(_ selection: Range<String.Index>) {
+    self.selection = selection
+    DispatchQueue.main.async {
+      self.position = text.position(from: self.selection.upperBound)
     }
   }
 
-  private func insertionPoint(of position: CodeEditor.Position) -> NSRange? {
-    return position.selections.first(where: { $0.length == 0 })
-  }
-
-  private func cursorPosition(for position: CodeEditor.Position) -> Position {
-    if let rng = insertionPoint(of: position) {
-      return cursorPosition(for: rng)
+  private func toInt(_ index: String.Index) -> Int {
+    if index > text.endIndex {
+      return text.count
+    } else {
+      return text.distance(from: text.startIndex, to: self.selection.upperBound)
     }
-
-    return (column: 1, line: 1)
   }
 
   private func cursorPosition(for range: NSRange) -> Position {
-    let oor = text.count < range.location
-    let index = text.index(text.startIndex, offsetBy: range.location - (oor ? 1 : 0))
-    let textBeforeCursor = text.endIndex < index ? text[...index] : text[..<index]
-    let y = textBeforeCursor.reduce(0, { $1 == "\n" ? $0 + 1 : $0 }) + 1
-    let lastLine = textBeforeCursor.components(separatedBy: "\n").last
-    let x = (lastLine?.count ?? 0) + 1 + (oor ? 1 : 0)
+    let cursorIndex = text.index(text.startIndex, offsetBy: range.location)
+    let textToCursor = text[..<cursorIndex]
+    let lines = textToCursor.components(separatedBy: "\n")
+    let line = lines.count
+    let column = lines.last?.count ?? 1
 
-    return (column: x, line: y)
+    return (column: max(1, column), line: line)
   }
 }

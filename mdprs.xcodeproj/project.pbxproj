@@ -23,9 +23,11 @@
 		E969BDD028722F9E00813639 /* MarkdownEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDCE28722F9E00813639 /* MarkdownEditor.swift */; };
 		E969BDD32872C0E100813639 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDD22872C0E100813639 /* StatusBar.swift */; };
 		E969BDD42872C0E100813639 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969BDD22872C0E100813639 /* StatusBar.swift */; };
-		E969BE2A2874591500813639 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = E969BE292874591500813639 /* CodeEditorView */; };
-		E969BE2C2874592A00813639 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = E969BE2B2874592A00813639 /* CodeEditorView */; };
 		E969BE2F2874B34F00813639 /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = E969BE2E2874B34F00813639 /* CodeEditor */; };
+		E9FE98852875B7C600077250 /* String+Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98842875B7C600077250 /* String+Cursor.swift */; };
+		E9FE98862875B7C600077250 /* String+Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98842875B7C600077250 /* String+Cursor.swift */; };
+		E9FE98882875B91600077250 /* String.Index+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98872875B91600077250 /* String.Index+index.swift */; };
+		E9FE98892875B91600077250 /* String.Index+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98872875B91600077250 /* String.Index+index.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		E969BDD22872C0E100813639 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		E969BE24287338B300813639 /* MACOS_BUILD_NUMBER.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MACOS_BUILD_NUMBER.xcconfig; sourceTree = "<group>"; };
 		E969BE262874013D00813639 /* IOS_BUILD_NUMBER.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = IOS_BUILD_NUMBER.xcconfig; sourceTree = "<group>"; };
+		E9FE98842875B7C600077250 /* String+Cursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Cursor.swift"; sourceTree = "<group>"; };
+		E9FE98872875B91600077250 /* String.Index+index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String.Index+index.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E969BE2C2874592A00813639 /* CodeEditorView in Frameworks */,
 				E930A10528709FFD00789657 /* Files in Frameworks */,
 				E930A10228709FD100789657 /* mdprsKit in Frameworks */,
 			);
@@ -62,7 +65,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E969BE2F2874B34F00813639 /* CodeEditor in Frameworks */,
-				E969BE2A2874591500813639 /* CodeEditorView in Frameworks */,
 				E930A1072870A00800789657 /* Files in Frameworks */,
 				E930A0FF28709FC400789657 /* mdprsKit in Frameworks */,
 			);
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				E930A0F328709EA700789657 /* Application */,
+				E9FE98832875B79E00077250 /* Extensions */,
 				E930A0F128709EA700789657 /* Models */,
 				E930A0F528709EA700789657 /* Views */,
 			);
@@ -172,6 +175,15 @@
 			path = Editor;
 			sourceTree = "<group>";
 		};
+		E9FE98832875B79E00077250 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98842875B7C600077250 /* String+Cursor.swift */,
+				E9FE98872875B91600077250 /* String.Index+index.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,7 +204,6 @@
 			packageProductDependencies = (
 				E930A10128709FD100789657 /* mdprsKit */,
 				E930A10428709FFD00789657 /* Files */,
-				E969BE2B2874592A00813639 /* CodeEditorView */,
 			);
 			productName = "mdprs (iOS)";
 			productReference = E930A0D428709D5E00789657 /* mdprs.app */;
@@ -215,7 +226,6 @@
 			packageProductDependencies = (
 				E930A0FE28709FC400789657 /* mdprsKit */,
 				E930A1062870A00800789657 /* Files */,
-				E969BE292874591500813639 /* CodeEditorView */,
 				E969BE2E2874B34F00813639 /* CodeEditor */,
 			);
 			productName = "mdprs (macOS)";
@@ -230,7 +240,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					E930A0D328709D5E00789657 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -252,7 +262,6 @@
 			packageReferences = (
 				E930A0FD28709FC400789657 /* XCRemoteSwiftPackageReference "mdprsKit" */,
 				E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */,
-				E969BE282874591500813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */,
 				E969BE2D2874B34F00813639 /* XCRemoteSwiftPackageReference "CodeEditor" */,
 			);
 			productRefGroup = E930A0D528709D5E00789657 /* Products */;
@@ -328,8 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FE98852875B7C600077250 /* String+Cursor.swift in Sources */,
 				E969BDD32872C0E100813639 /* StatusBar.swift in Sources */,
 				E930A0F928709EA700789657 /* PresenterApp.swift in Sources */,
+				E9FE98882875B91600077250 /* String.Index+index.swift in Sources */,
 				E969BDCF28722F9E00813639 /* MarkdownEditor.swift in Sources */,
 				E930A0F728709EA700789657 /* PresenterDocument.swift in Sources */,
 				E930A0FB28709EA700789657 /* PresentationEditorView.swift in Sources */,
@@ -340,8 +351,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FE98862875B7C600077250 /* String+Cursor.swift in Sources */,
 				E969BDD42872C0E100813639 /* StatusBar.swift in Sources */,
 				E930A0FA28709EA700789657 /* PresenterApp.swift in Sources */,
+				E9FE98892875B91600077250 /* String.Index+index.swift in Sources */,
 				E969BDD028722F9E00813639 /* MarkdownEditor.swift in Sources */,
 				E930A0F828709EA700789657 /* PresenterDocument.swift in Sources */,
 				E930A0FC28709EA700789657 /* PresentationEditorView.swift in Sources */,
@@ -544,6 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = "$(MACOS_BUILD_NUMBER)";
@@ -575,6 +589,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = "$(MACOS_BUILD_NUMBER)";
@@ -648,14 +663,6 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		E969BE282874591500813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mchakravarty/CodeEditorView";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		E969BE2D2874B34F00813639 /* XCRemoteSwiftPackageReference "CodeEditor" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ZeeZide/CodeEditor";
@@ -686,16 +693,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */;
 			productName = Files;
-		};
-		E969BE292874591500813639 /* CodeEditorView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E969BE282874591500813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
-			productName = CodeEditorView;
-		};
-		E969BE2B2874592A00813639 /* CodeEditorView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E969BE282874591500813639 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
-			productName = CodeEditorView;
 		};
 		E969BE2E2874B34F00813639 /* CodeEditor */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -1,7 +1,7 @@
 ---
-title: Markdown Presentation (mdprs)
-author: Thomas Bonk
-description: This presentation documents the feature of mdprs.
+title:Markdown Presentation (mdprs)
+author:Thomas Bonk
+description:This presentation documents the feature of mdprs.
 theme: sky
 ---
 

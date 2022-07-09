@@ -28,6 +28,9 @@
 		E9FE98862875B7C600077250 /* String+Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98842875B7C600077250 /* String+Cursor.swift */; };
 		E9FE98882875B91600077250 /* String.Index+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98872875B91600077250 /* String.Index+index.swift */; };
 		E9FE98892875B91600077250 /* String.Index+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98872875B91600077250 /* String.Index+index.swift */; };
+		E9FE988B28783D2300077250 /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE988A28783D2300077250 /* CodeEditor */; };
+		E9FE988E28783D4000077250 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE988D28783D4000077250 /* SimpleToast */; };
+		E9FE989028783D4E00077250 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE988F28783D4E00077250 /* SimpleToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FE989028783D4E00077250 /* SimpleToast in Frameworks */,
 				E930A10528709FFD00789657 /* Files in Frameworks */,
+				E9FE988B28783D2300077250 /* CodeEditor in Frameworks */,
 				E930A10228709FD100789657 /* mdprsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FE988E28783D4000077250 /* SimpleToast in Frameworks */,
 				E969BE2F2874B34F00813639 /* CodeEditor in Frameworks */,
 				E930A1072870A00800789657 /* Files in Frameworks */,
 				E930A0FF28709FC400789657 /* mdprsKit in Frameworks */,
@@ -204,6 +210,8 @@
 			packageProductDependencies = (
 				E930A10128709FD100789657 /* mdprsKit */,
 				E930A10428709FFD00789657 /* Files */,
+				E9FE988A28783D2300077250 /* CodeEditor */,
+				E9FE988F28783D4E00077250 /* SimpleToast */,
 			);
 			productName = "mdprs (iOS)";
 			productReference = E930A0D428709D5E00789657 /* mdprs.app */;
@@ -227,6 +235,7 @@
 				E930A0FE28709FC400789657 /* mdprsKit */,
 				E930A1062870A00800789657 /* Files */,
 				E969BE2E2874B34F00813639 /* CodeEditor */,
+				E9FE988D28783D4000077250 /* SimpleToast */,
 			);
 			productName = "mdprs (macOS)";
 			productReference = E930A0DC28709D5E00789657 /* mdprs.app */;
@@ -263,6 +272,7 @@
 				E930A0FD28709FC400789657 /* XCRemoteSwiftPackageReference "mdprsKit" */,
 				E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */,
 				E969BE2D2874B34F00813639 /* XCRemoteSwiftPackageReference "CodeEditor" */,
+				E9FE988C28783D4000077250 /* XCRemoteSwiftPackageReference "SimpleToast" */,
 			);
 			productRefGroup = E930A0D528709D5E00789657 /* Products */;
 			projectDirPath = "";
@@ -671,6 +681,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		E9FE988C28783D4000077250 /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -698,6 +716,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E969BE2D2874B34F00813639 /* XCRemoteSwiftPackageReference "CodeEditor" */;
 			productName = CodeEditor;
+		};
+		E9FE988A28783D2300077250 /* CodeEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E969BE2D2874B34F00813639 /* XCRemoteSwiftPackageReference "CodeEditor" */;
+			productName = CodeEditor;
+		};
+		E9FE988D28783D4000077250 /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9FE988C28783D4000077250 /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+		E9FE988F28783D4E00077250 /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9FE988C28783D4000077250 /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

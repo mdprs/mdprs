@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+import Foundation
 import mdprsKit
 import SwiftUI
 import UniformTypeIdentifiers

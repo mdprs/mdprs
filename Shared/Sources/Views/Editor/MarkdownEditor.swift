@@ -19,7 +19,7 @@
 //
 
 import CodeEditor
-import Combine
+import mdprsKit
 import SwiftUI
 
 struct MarkdownEditor: View {
@@ -45,6 +45,9 @@ struct MarkdownEditor: View {
   @Binding
   var position: Position
 
+  @Binding
+  var slide: Int
+
 
   // MARK: - Private Properties
 
@@ -60,7 +63,15 @@ struct MarkdownEditor: View {
   private func updatePosition(_ selection: Range<String.Index>) {
     self.selection = selection
     DispatchQueue.main.async {
-      self.position = text.position(from: self.selection.upperBound)
+      self.position = self.text.position(from: self.selection.upperBound)
+
+      DispatchQueue.global(qos: .userInitiated).async {
+        let slideNum = Parser.slide(of: self.position.line, in: self.text) ?? 0
+
+        DispatchQueue.main.async {
+          self.slide = slideNum
+        }
+      }
     }
   }
 

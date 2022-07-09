@@ -18,6 +18,7 @@
 //  limitations under the License.
 //
 
+import Combine
 import mdprsKit
 import SwiftUI
 
@@ -27,8 +28,8 @@ struct PresentationEditorView: View {
 
   var body: some View {
     VStack {
-      MarkdownEditor(text: documentBinding(), position: $position)
-      StatusBar(position: $position, showPreview: $showPreview).padding(.vertical, 2)
+      MarkdownEditor(text: documentBinding(), position: $position, slide: $slide)
+      StatusBar(position: $position, slide: $slide, showPreview: $showPreview).padding(.vertical, 2)
     }
     .onAppear(perform: startPresentationService)
     .onDisappear(perform: stopPresentationService)
@@ -42,6 +43,9 @@ struct PresentationEditorView: View {
 
   @State
   private var position = (column: 1, line: 1)
+
+  @State
+  private var slide = 1
 
   @State
   private var showPreview = false

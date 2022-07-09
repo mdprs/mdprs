@@ -28,6 +28,10 @@ struct StatusBar: View {
     HStack {
       Text("Line: \(position.line) Col: \(position.column)")
 
+      Divider().frame(height: 20)
+
+      Text("Slide: \(slide)")
+
       Spacer()
 
       Button {
@@ -46,6 +50,9 @@ struct StatusBar: View {
 
   @Binding
   var position: MarkdownEditor.Position
+
+  @Binding
+  var slide: Int
 
   @Binding
   var showPreview: Bool

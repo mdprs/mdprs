@@ -34,6 +34,19 @@ struct StatusBar: View {
 
       Spacer()
 
+      Text("Port: \(String(servicePort))")
+
+      Divider().frame(height: 20)
+
+      Button {
+        showPresentation = !showPresentation
+      } label: {
+        Image(systemName: showPresentation ? "play.rectangle.fill" : "play.rectangle")
+      }
+      .help("Open Presentation Window")
+      .keyboardShortcut("s", modifiers: .command)
+      .buttonStyle(.plain)
+
       Button {
         showPreview = !showPreview
       } label: {
@@ -55,6 +68,11 @@ struct StatusBar: View {
   var slide: Int
 
   @Binding
+  var showPresentation: Bool
+
+  @Binding
   var showPreview: Bool
+
+  var servicePort: UInt16
 }
 

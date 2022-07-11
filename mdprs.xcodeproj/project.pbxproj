@@ -31,6 +31,25 @@
 		E9FE988B28783D2300077250 /* CodeEditor in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE988A28783D2300077250 /* CodeEditor */; };
 		E9FE988E28783D4000077250 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE988D28783D4000077250 /* SimpleToast */; };
 		E9FE989028783D4E00077250 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE988F28783D4E00077250 /* SimpleToast */; };
+		E9FE98932879C56900077250 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE98922879C56900077250 /* SwiftUIKit */; };
+		E9FE98952879C57500077250 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE98942879C57500077250 /* SwiftUIKit */; };
+		E9FE98982879C62600077250 /* WebView in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE98972879C62600077250 /* WebView */; };
+		E9FE989A2879C63300077250 /* WebView in Frameworks */ = {isa = PBXBuildFile; productRef = E9FE98992879C63300077250 /* WebView */; };
+		E9FE989C2879C65900077250 /* PresentationPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE989B2879C65900077250 /* PresentationPreview.swift */; };
+		E9FE989D2879C65900077250 /* PresentationPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE989B2879C65900077250 /* PresentationPreview.swift */; };
+		E9FE989F287AC72F00077250 /* Binding+didSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE989E287AC72F00077250 /* Binding+didSet.swift */; };
+		E9FE98A0287AC72F00077250 /* Binding+didSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE989E287AC72F00077250 /* Binding+didSet.swift */; };
+		E9FE98A3287ACE5A00077250 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A2287ACE5A00077250 /* Presenter.swift */; };
+		E9FE98A4287ACE5A00077250 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A2287ACE5A00077250 /* Presenter.swift */; };
+		E9FE98A6287ACF8B00077250 /* ChromePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A5287ACF8B00077250 /* ChromePresenter.swift */; };
+		E9FE98A8287ACFB200077250 /* SystemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A7287ACFB200077250 /* SystemPresenter.swift */; };
+		E9FE98A9287ACFB200077250 /* SystemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A7287ACFB200077250 /* SystemPresenter.swift */; };
+		E9FE98AF287AD0BE00077250 /* Presenter+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98AE287AD0BE00077250 /* Presenter+iOS.swift */; };
+		E9FE98B1287AD0F100077250 /* Presenter+macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B0287AD0F100077250 /* Presenter+macOS.swift */; };
+		E9FE98B4287B4CFA00077250 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B3287B4CFA00077250 /* Toast.swift */; };
+		E9FE98B5287B4CFA00077250 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B3287B4CFA00077250 /* Toast.swift */; };
+		E9FE98B7287BE50C00077250 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B6287BE50C00077250 /* ToastView.swift */; };
+		E9FE98B8287BE50C00077250 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B6287BE50C00077250 /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +70,15 @@
 		E969BE262874013D00813639 /* IOS_BUILD_NUMBER.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = IOS_BUILD_NUMBER.xcconfig; sourceTree = "<group>"; };
 		E9FE98842875B7C600077250 /* String+Cursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Cursor.swift"; sourceTree = "<group>"; };
 		E9FE98872875B91600077250 /* String.Index+index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String.Index+index.swift"; sourceTree = "<group>"; };
+		E9FE989B2879C65900077250 /* PresentationPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationPreview.swift; sourceTree = "<group>"; };
+		E9FE989E287AC72F00077250 /* Binding+didSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+didSet.swift"; sourceTree = "<group>"; };
+		E9FE98A2287ACE5A00077250 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		E9FE98A5287ACF8B00077250 /* ChromePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromePresenter.swift; sourceTree = "<group>"; };
+		E9FE98A7287ACFB200077250 /* SystemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPresenter.swift; sourceTree = "<group>"; };
+		E9FE98AE287AD0BE00077250 /* Presenter+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+iOS.swift"; sourceTree = "<group>"; };
+		E9FE98B0287AD0F100077250 /* Presenter+macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+macOS.swift"; sourceTree = "<group>"; };
+		E9FE98B3287B4CFA00077250 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		E9FE98B6287BE50C00077250 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +86,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FE989A2879C63300077250 /* WebView in Frameworks */,
 				E9FE989028783D4E00077250 /* SimpleToast in Frameworks */,
 				E930A10528709FFD00789657 /* Files in Frameworks */,
 				E9FE988B28783D2300077250 /* CodeEditor in Frameworks */,
+				E9FE98952879C57500077250 /* SwiftUIKit in Frameworks */,
 				E930A10228709FD100789657 /* mdprsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,9 +99,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FE98982879C62600077250 /* WebView in Frameworks */,
 				E9FE988E28783D4000077250 /* SimpleToast in Frameworks */,
 				E969BE2F2874B34F00813639 /* CodeEditor in Frameworks */,
 				E930A1072870A00800789657 /* Files in Frameworks */,
+				E9FE98932879C56900077250 /* SwiftUIKit in Frameworks */,
 				E930A0FF28709FC400789657 /* mdprsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +145,7 @@
 		E930A0D628709D5E00789657 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E9FE98AC287AD09800077250 /* Sources */,
 				E930A0D728709D5E00789657 /* Info.plist */,
 				E969BE262874013D00813639 /* IOS_BUILD_NUMBER.xcconfig */,
 			);
@@ -122,6 +155,7 @@
 		E930A0DD28709D5E00789657 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				E9FE98AA287AD08B00077250 /* Sources */,
 				E930A0DE28709D5E00789657 /* Info.plist */,
 				E930A0DF28709D5E00789657 /* macOS.entitlements */,
 				E969BE24287338B300813639 /* MACOS_BUILD_NUMBER.xcconfig */,
@@ -132,9 +166,11 @@
 		E930A0F028709EA700789657 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E9FE98B2287B2ED500077250 /* Toast */,
 				E930A0F328709EA700789657 /* Application */,
 				E9FE98832875B79E00077250 /* Extensions */,
 				E930A0F128709EA700789657 /* Models */,
+				E9FE98A1287ACE2C00077250 /* Presenter */,
 				E930A0F528709EA700789657 /* Views */,
 			);
 			path = Sources;
@@ -177,6 +213,7 @@
 				E969BDCE28722F9E00813639 /* MarkdownEditor.swift */,
 				E930A0F628709EA700789657 /* PresentationEditorView.swift */,
 				E969BDD22872C0E100813639 /* StatusBar.swift */,
+				E9FE989B2879C65900077250 /* PresentationPreview.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -186,8 +223,60 @@
 			children = (
 				E9FE98842875B7C600077250 /* String+Cursor.swift */,
 				E9FE98872875B91600077250 /* String.Index+index.swift */,
+				E9FE989E287AC72F00077250 /* Binding+didSet.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E9FE98A1287ACE2C00077250 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98A2287ACE5A00077250 /* Presenter.swift */,
+				E9FE98A7287ACFB200077250 /* SystemPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E9FE98AA287AD08B00077250 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98AB287AD08B00077250 /* Presenter */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E9FE98AB287AD08B00077250 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98A5287ACF8B00077250 /* ChromePresenter.swift */,
+				E9FE98B0287AD0F100077250 /* Presenter+macOS.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E9FE98AC287AD09800077250 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98AD287AD09800077250 /* Presenter */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E9FE98AD287AD09800077250 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98AE287AD0BE00077250 /* Presenter+iOS.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E9FE98B2287B2ED500077250 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98B3287B4CFA00077250 /* Toast.swift */,
+				E9FE98B6287BE50C00077250 /* ToastView.swift */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +301,8 @@
 				E930A10428709FFD00789657 /* Files */,
 				E9FE988A28783D2300077250 /* CodeEditor */,
 				E9FE988F28783D4E00077250 /* SimpleToast */,
+				E9FE98942879C57500077250 /* SwiftUIKit */,
+				E9FE98992879C63300077250 /* WebView */,
 			);
 			productName = "mdprs (iOS)";
 			productReference = E930A0D428709D5E00789657 /* mdprs.app */;
@@ -236,6 +327,8 @@
 				E930A1062870A00800789657 /* Files */,
 				E969BE2E2874B34F00813639 /* CodeEditor */,
 				E9FE988D28783D4000077250 /* SimpleToast */,
+				E9FE98922879C56900077250 /* SwiftUIKit */,
+				E9FE98972879C62600077250 /* WebView */,
 			);
 			productName = "mdprs (macOS)";
 			productReference = E930A0DC28709D5E00789657 /* mdprs.app */;
@@ -273,6 +366,8 @@
 				E930A10328709FFD00789657 /* XCRemoteSwiftPackageReference "Files" */,
 				E969BE2D2874B34F00813639 /* XCRemoteSwiftPackageReference "CodeEditor" */,
 				E9FE988C28783D4000077250 /* XCRemoteSwiftPackageReference "SimpleToast" */,
+				E9FE98912879C56900077250 /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
+				E9FE98962879C62600077250 /* XCRemoteSwiftPackageReference "SwiftUI-WebView" */,
 			);
 			productRefGroup = E930A0D528709D5E00789657 /* Products */;
 			projectDirPath = "";
@@ -349,8 +444,15 @@
 			files = (
 				E9FE98852875B7C600077250 /* String+Cursor.swift in Sources */,
 				E969BDD32872C0E100813639 /* StatusBar.swift in Sources */,
+				E9FE989C2879C65900077250 /* PresentationPreview.swift in Sources */,
+				E9FE98A8287ACFB200077250 /* SystemPresenter.swift in Sources */,
 				E930A0F928709EA700789657 /* PresenterApp.swift in Sources */,
+				E9FE98B4287B4CFA00077250 /* Toast.swift in Sources */,
 				E9FE98882875B91600077250 /* String.Index+index.swift in Sources */,
+				E9FE98A3287ACE5A00077250 /* Presenter.swift in Sources */,
+				E9FE98B7287BE50C00077250 /* ToastView.swift in Sources */,
+				E9FE989F287AC72F00077250 /* Binding+didSet.swift in Sources */,
+				E9FE98AF287AD0BE00077250 /* Presenter+iOS.swift in Sources */,
 				E969BDCF28722F9E00813639 /* MarkdownEditor.swift in Sources */,
 				E930A0F728709EA700789657 /* PresenterDocument.swift in Sources */,
 				E930A0FB28709EA700789657 /* PresentationEditorView.swift in Sources */,
@@ -363,10 +465,18 @@
 			files = (
 				E9FE98862875B7C600077250 /* String+Cursor.swift in Sources */,
 				E969BDD42872C0E100813639 /* StatusBar.swift in Sources */,
+				E9FE989D2879C65900077250 /* PresentationPreview.swift in Sources */,
 				E930A0FA28709EA700789657 /* PresenterApp.swift in Sources */,
+				E9FE98B8287BE50C00077250 /* ToastView.swift in Sources */,
 				E9FE98892875B91600077250 /* String.Index+index.swift in Sources */,
+				E9FE98A9287ACFB200077250 /* SystemPresenter.swift in Sources */,
+				E9FE98B5287B4CFA00077250 /* Toast.swift in Sources */,
+				E9FE98A4287ACE5A00077250 /* Presenter.swift in Sources */,
+				E9FE98A0287AC72F00077250 /* Binding+didSet.swift in Sources */,
 				E969BDD028722F9E00813639 /* MarkdownEditor.swift in Sources */,
 				E930A0F828709EA700789657 /* PresenterDocument.swift in Sources */,
+				E9FE98B1287AD0F100077250 /* Presenter+macOS.swift in Sources */,
+				E9FE98A6287ACF8B00077250 /* ChromePresenter.swift in Sources */,
 				E930A0FC28709EA700789657 /* PresentationEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,6 +799,22 @@
 				minimumVersion = 0.6.2;
 			};
 		};
+		E9FE98912879C56900077250 /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/SwiftUIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		E9FE98962879C62600077250 /* XCRemoteSwiftPackageReference "SwiftUI-WebView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylehickinson/SwiftUI-WebView";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -731,6 +857,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E9FE988C28783D4000077250 /* XCRemoteSwiftPackageReference "SimpleToast" */;
 			productName = SimpleToast;
+		};
+		E9FE98922879C56900077250 /* SwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9FE98912879C56900077250 /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
+			productName = SwiftUIKit;
+		};
+		E9FE98942879C57500077250 /* SwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9FE98912879C56900077250 /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
+			productName = SwiftUIKit;
+		};
+		E9FE98972879C62600077250 /* WebView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9FE98962879C62600077250 /* XCRemoteSwiftPackageReference "SwiftUI-WebView" */;
+			productName = WebView;
+		};
+		E9FE98992879C63300077250 /* WebView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9FE98962879C62600077250 /* XCRemoteSwiftPackageReference "SwiftUI-WebView" */;
+			productName = WebView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

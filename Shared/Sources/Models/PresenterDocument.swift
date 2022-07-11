@@ -29,7 +29,7 @@ extension UTType {
   }
 }
 
-struct PresenterDocument: FileDocument {
+struct PresenterDocument: FileDocument, Hashable {
 
   // MARK: - Static Properties
 

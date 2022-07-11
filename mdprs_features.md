@@ -2,12 +2,16 @@
 title:Markdown Presentation (mdprs)
 author:Thomas Bonk
 description:This presentation documents the feature of mdprs.
-theme: sky
+theme: white
+center: true
+width: 3840
+height: 2160
+minscale: 0.5
 ---
 
-# Markdown Presentation (mdprs)
-## Features and Recipes
-### Thomas Bonk
+## Markdown Presentation (mdprs)
+### Features and Recipes
+#### Thomas Bonk
 
 ---
 
@@ -29,7 +33,7 @@ Slides are separated with `---`.
 
 ## Metadata
 
-Metadata for a presentation is placed between two `---` lines Xat the beginning of the file:
+Metadata for a presentation is placed at the beginning of the file:
 
 ```markdown
 ---

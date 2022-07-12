@@ -1,8 +1,8 @@
 //
-//  Presenter+iOS.swift
-//  mdprs (iOS)
+//  AppStorageKeys.swift
+//  mdprs
 //
-//  Created by Thomas Bonk on 10.07.22.
+//  Created by Thomas Bonk on 12.07.22.
 //  Copyright 2022 Thomas Bonk <thomas@meandmymac.de>
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,17 +20,6 @@
 
 import Foundation
 
-extension Presenter {
-
-  // MARK: - Static Properties
-
-  static var presenter: Presenter {
-    return SystemPresenter()
-  }
-}
-
-extension SystemPresenter {
-  func openPresenter(port: UInt16) {
-    UIApplication.shared.open(URL(string: "http://localhost:\(String(port))")!)
-  }
+extension String {
+  static let WasChromeBrowserChecked = "WasChromeBrowserChecked"
 }

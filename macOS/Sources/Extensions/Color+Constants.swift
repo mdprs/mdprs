@@ -1,8 +1,8 @@
 //
-//  Presenter+iOS.swift
+//  Color+Constants.swift
 //  mdprs (iOS)
 //
-//  Created by Thomas Bonk on 10.07.22.
+//  Created by Thomas Bonk on 12.07.22.
 //  Copyright 2022 Thomas Bonk <thomas@meandmymac.de>
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,19 +18,10 @@
 //  limitations under the License.
 //
 
+import AppKit
 import Foundation
+import SwiftUI
 
-extension Presenter {
-
-  // MARK: - Static Properties
-
-  static var presenter: Presenter {
-    return SystemPresenter()
-  }
-}
-
-extension SystemPresenter {
-  func openPresenter(port: UInt16) {
-    UIApplication.shared.open(URL(string: "http://localhost:\(String(port))")!)
-  }
+extension Color {
+  static let toastBackground = Color(NSColor.controlBackgroundColor).opacity(0.9)
 }

@@ -41,7 +41,7 @@ struct StatusBar: View {
       Button {
         showPresentation = !showPresentation
       } label: {
-        Image(systemName: showPresentation ? "play.rectangle.fill" : "play.rectangle")
+        Image(systemName: "play.rectangle")
       }
       .help("Open Presentation Window")
       .keyboardShortcut("s", modifiers: .command)

@@ -18,31 +18,26 @@
 //  limitations under the License.
 //
 
-import Files
+import AppKit
 import Foundation
+
+fileprivate var sharedSystemPresenter: Presenter = {
+  return SystemPresenter()
+}()
+
 
 extension Presenter {
 
   // MARK: - Static Properties
 
   static var presenter: Presenter {
-    if isChromeInstalled() {
-      return ChromePresenter()
-    } else {
-      return SystemPresenter()
-    }
+    return sharedSystemPresenter
   }
+}
 
 
-  // MARK: - Static Methods
-
-  static func isChromeInstalled() -> Bool {
-    do {
-      var _ = try File(path: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
-
-      return true
-    } catch {
-      return false
-    }
+extension SystemPresenter {
+  func openPresenter(port: UInt16) {
+    NSWorkspace.shared.open(URL(string: "http://localhost:\(String(port))")!)
   }
 }

@@ -50,11 +50,8 @@ struct PresentationEditorView: View {
     .onDisappear(perform: deregisterToastNotifications)
     .simpleToast(isPresented: $showToast, options: toast.toastOptions, onDismiss: toast.dismissCallback) {
       ToastView(toast: toast)
-        .background(Color(NSColor.controlBackgroundColor).opacity(0.9))
+        .background(Color.toastBackground)
         .padding()
-    }
-    .onAppear {
-      fatalErrorToast(message: "This is an informational message!", document: document, error: CocoaError(.fileReadCorruptFile)).show()
     }
   }
 
@@ -140,6 +137,10 @@ struct PresentationEditorView: View {
   }
 
   private func togglePresentation(visible: Bool) {
-    // TODO
+    do {
+      try SystemPresenter.presenter.openPresenter(port: presentationService.port)
+    } catch {
+      errorToast(message: "Can't start Google Chrome!", document: self.document, error: error).show()
+    }
   }
 }

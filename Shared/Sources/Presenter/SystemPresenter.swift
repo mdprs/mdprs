@@ -19,12 +19,12 @@
 //
 
 import Foundation
+#if canImport(AppKit)
+import AppKit
+#elseif canImport(UIKit)
+import UIKit
+#endif
 
 class SystemPresenter: Presenter {
 
-  // MARK: - Presenter
-  
-  func openPresenter(port: UInt16) {
-
-  }
 }

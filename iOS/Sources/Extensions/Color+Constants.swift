@@ -1,8 +1,8 @@
 //
-//  ChromePresenter.swift
-//  mdprs (macOS)
+//  Color+Constants.swift
+//  mdprs (iOS)
 //
-//  Created by Thomas Bonk on 10.07.22.
+//  Created by Thomas Bonk on 12.07.22.
 //  Copyright 2022 Thomas Bonk <thomas@meandmymac.de>
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,12 +19,8 @@
 //
 
 import Foundation
+import SwiftUI
 
-class ChromePresenter: Presenter {
-
-  // MARK: - Presenter
-  
-  func openPresenter(port: UInt16) {
-
-  }
+extension Color {
+  static let toastBackground = Color(UIColor.systemBackground).opacity(0.9)
 }

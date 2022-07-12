@@ -27,13 +27,8 @@ protocol Presenter {
   static var presenter: Presenter { get }
 
 
-  // MARK: - Static Methods
-
-  static func isChromeInstalled() -> Bool
-
-
   // MARK: - Methods
 
-  func openPresenter(port: UInt16)
+  func openPresenter(port: UInt16) throws
 }
 

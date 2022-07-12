@@ -41,7 +41,6 @@
 		E9FE98A0287AC72F00077250 /* Binding+didSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE989E287AC72F00077250 /* Binding+didSet.swift */; };
 		E9FE98A3287ACE5A00077250 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A2287ACE5A00077250 /* Presenter.swift */; };
 		E9FE98A4287ACE5A00077250 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A2287ACE5A00077250 /* Presenter.swift */; };
-		E9FE98A6287ACF8B00077250 /* ChromePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A5287ACF8B00077250 /* ChromePresenter.swift */; };
 		E9FE98A8287ACFB200077250 /* SystemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A7287ACFB200077250 /* SystemPresenter.swift */; };
 		E9FE98A9287ACFB200077250 /* SystemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98A7287ACFB200077250 /* SystemPresenter.swift */; };
 		E9FE98AF287AD0BE00077250 /* Presenter+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98AE287AD0BE00077250 /* Presenter+iOS.swift */; };
@@ -50,6 +49,10 @@
 		E9FE98B5287B4CFA00077250 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B3287B4CFA00077250 /* Toast.swift */; };
 		E9FE98B7287BE50C00077250 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B6287BE50C00077250 /* ToastView.swift */; };
 		E9FE98B8287BE50C00077250 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B6287BE50C00077250 /* ToastView.swift */; };
+		E9FE98BA287D800F00077250 /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B9287D800F00077250 /* AppStorageKeys.swift */; };
+		E9FE98BB287D800F00077250 /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98B9287D800F00077250 /* AppStorageKeys.swift */; };
+		E9FE98BE287E0BD100077250 /* Color+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98BD287E0BD100077250 /* Color+Constants.swift */; };
+		E9FE98C1287E0CB600077250 /* Color+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE98C0287E0C4C00077250 /* Color+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,12 +76,14 @@
 		E9FE989B2879C65900077250 /* PresentationPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationPreview.swift; sourceTree = "<group>"; };
 		E9FE989E287AC72F00077250 /* Binding+didSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+didSet.swift"; sourceTree = "<group>"; };
 		E9FE98A2287ACE5A00077250 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		E9FE98A5287ACF8B00077250 /* ChromePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromePresenter.swift; sourceTree = "<group>"; };
 		E9FE98A7287ACFB200077250 /* SystemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPresenter.swift; sourceTree = "<group>"; };
 		E9FE98AE287AD0BE00077250 /* Presenter+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+iOS.swift"; sourceTree = "<group>"; };
 		E9FE98B0287AD0F100077250 /* Presenter+macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+macOS.swift"; sourceTree = "<group>"; };
 		E9FE98B3287B4CFA00077250 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		E9FE98B6287BE50C00077250 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		E9FE98B9287D800F00077250 /* AppStorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageKeys.swift; sourceTree = "<group>"; };
+		E9FE98BD287E0BD100077250 /* Color+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Constants.swift"; sourceTree = "<group>"; };
+		E9FE98C0287E0C4C00077250 /* Color+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,11 +171,11 @@
 		E930A0F028709EA700789657 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E9FE98B2287B2ED500077250 /* Toast */,
 				E930A0F328709EA700789657 /* Application */,
 				E9FE98832875B79E00077250 /* Extensions */,
 				E930A0F128709EA700789657 /* Models */,
 				E9FE98A1287ACE2C00077250 /* Presenter */,
+				E9FE98B2287B2ED500077250 /* Toast */,
 				E930A0F528709EA700789657 /* Views */,
 			);
 			path = Sources;
@@ -188,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				E930A0F428709EA700789657 /* PresenterApp.swift */,
+				E9FE98B9287D800F00077250 /* AppStorageKeys.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 		E9FE98AA287AD08B00077250 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E9FE98BF287E0C3C00077250 /* Extensions */,
 				E9FE98AB287AD08B00077250 /* Presenter */,
 			);
 			path = Sources;
@@ -248,7 +255,6 @@
 		E9FE98AB287AD08B00077250 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				E9FE98A5287ACF8B00077250 /* ChromePresenter.swift */,
 				E9FE98B0287AD0F100077250 /* Presenter+macOS.swift */,
 			);
 			path = Presenter;
@@ -257,6 +263,7 @@
 		E9FE98AC287AD09800077250 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E9FE98BC287E0B8E00077250 /* Extensions */,
 				E9FE98AD287AD09800077250 /* Presenter */,
 			);
 			path = Sources;
@@ -277,6 +284,22 @@
 				E9FE98B6287BE50C00077250 /* ToastView.swift */,
 			);
 			path = Toast;
+			sourceTree = "<group>";
+		};
+		E9FE98BC287E0B8E00077250 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98BD287E0BD100077250 /* Color+Constants.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E9FE98BF287E0C3C00077250 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98C0287E0C4C00077250 /* Color+Constants.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,7 +470,9 @@
 				E9FE989C2879C65900077250 /* PresentationPreview.swift in Sources */,
 				E9FE98A8287ACFB200077250 /* SystemPresenter.swift in Sources */,
 				E930A0F928709EA700789657 /* PresenterApp.swift in Sources */,
+				E9FE98BA287D800F00077250 /* AppStorageKeys.swift in Sources */,
 				E9FE98B4287B4CFA00077250 /* Toast.swift in Sources */,
+				E9FE98BE287E0BD100077250 /* Color+Constants.swift in Sources */,
 				E9FE98882875B91600077250 /* String.Index+index.swift in Sources */,
 				E9FE98A3287ACE5A00077250 /* Presenter.swift in Sources */,
 				E9FE98B7287BE50C00077250 /* ToastView.swift in Sources */,
@@ -464,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9FE98862875B7C600077250 /* String+Cursor.swift in Sources */,
+				E9FE98BB287D800F00077250 /* AppStorageKeys.swift in Sources */,
 				E969BDD42872C0E100813639 /* StatusBar.swift in Sources */,
 				E9FE989D2879C65900077250 /* PresentationPreview.swift in Sources */,
 				E930A0FA28709EA700789657 /* PresenterApp.swift in Sources */,
@@ -476,8 +502,8 @@
 				E969BDD028722F9E00813639 /* MarkdownEditor.swift in Sources */,
 				E930A0F828709EA700789657 /* PresenterDocument.swift in Sources */,
 				E9FE98B1287AD0F100077250 /* Presenter+macOS.swift in Sources */,
-				E9FE98A6287ACF8B00077250 /* ChromePresenter.swift in Sources */,
 				E930A0FC28709EA700789657 /* PresentationEditorView.swift in Sources */,
+				E9FE98C1287E0CB600077250 /* Color+Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,8 @@ struct ToastView<Document: Hashable>: View {
         AlertImage().padding(.all, 20)
 
         VStack {
-          Text(toast.message).multilineTextAlignment(.center)
+          Text(toast.message)
+            .multilineTextAlignment(.center)
             .padding(.vertical, 15)
 
           if let err = toast.error {

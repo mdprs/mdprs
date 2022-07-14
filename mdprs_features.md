@@ -7,6 +7,7 @@ center: true
 width: 3840
 height: 2160
 minscale: 0.5
+style-text-align: left
 ---
 
 ## Markdown Presentation (mdprs)

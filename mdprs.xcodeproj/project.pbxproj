@@ -84,6 +84,7 @@
 		E9FE98B9287D800F00077250 /* AppStorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageKeys.swift; sourceTree = "<group>"; };
 		E9FE98BD287E0BD100077250 /* Color+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Constants.swift"; sourceTree = "<group>"; };
 		E9FE98C0287E0C4C00077250 /* Color+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Constants.swift"; sourceTree = "<group>"; };
+		E9FE98C32880AA8200077250 /* mdprs_features.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = mdprs_features.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 			children = (
 				E930A10928717D2900789657 /* LICENSE.md */,
 				E930A10828717CFE00789657 /* README.md */,
+				E9FE98C22880AA5700077250 /* docs */,
 				E930A0CB28709D5C00789657 /* Shared */,
 				E930A0D628709D5E00789657 /* iOS */,
 				E930A0DD28709D5E00789657 /* macOS */,
@@ -300,6 +302,14 @@
 				E9FE98C0287E0C4C00077250 /* Color+Constants.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E9FE98C22880AA5700077250 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE98C32880AA8200077250 /* mdprs_features.md */,
+			);
+			path = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
